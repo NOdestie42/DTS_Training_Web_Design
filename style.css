@@ -1,0 +1,107 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(content/Euclid\ Circular\ B\ Light.ttf);
+ }
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: myFirstFont;
+}
+.dts-header-head{
+    background-color: #192335;
+}
+.dts-header-head-content{
+    display: flex;
+    flex-flow: row wrap;
+    align-items:center;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 10px 0px;
+    font-size: 14px;
+
+}
+.dts-header-head{
+    padding: 10px 15px 0px 15px ;
+}
+.header-links-ulist{
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+.dts-header-phone-mail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px;
+    color: #ffffff;
+    opacity: 67%;
+}
+.hand-hello-para{
+    color: #ffffff;
+    opacity: 67%;
+}
+.header-question-icon{
+    color: #ffffff;
+    opacity: 67%;
+}
+.header-link-ancor{
+    text-decoration: none;
+    color: #ffffff;
+    opacity: 67%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1130px) {
+    .dts-header-phone-mail{
+        visibility: hidden;
+        display: none;
+    }
+}
