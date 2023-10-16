@@ -1,6 +1,6 @@
 function showCategorie() {
     const show = document.querySelector('.categorie-option');
-    show.classList.toggle('categorie-option-show')
+    show.classList.toggle('categorie-option-show');
 }
 window.onclick = function (event) {
     if (!event.target.matches('.select-icon')) {
