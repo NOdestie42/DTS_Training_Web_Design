@@ -409,15 +409,101 @@ body {
     gap: 30px;
     padding: 30px 20px;
     background-color: #ffffff;
-
 }
 
+/* ------------------Home Bannner Start-----------------  */
 
+.home-banner {
+    background-image: url(content/bg-g1.webp);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
 
+.banner-content {
+    padding: 0px 35px;
+}
 
+.banner-left-item {
+    width: 250px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+}
 
+.banner-flex-items {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 50px 0px;
+}
 
+.banner-left-lable {
+    font-weight: 600;
+    font-size: medium;
+    max-width: 240px;
+    padding: 14px 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 
+.left-head {
+    padding: 25px 0px;
+}
+
+.ban-head {
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+.ban-para {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #8a90a3;
+}
+.banner-btns{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 15px;
+    padding: 30px 5px;
+}
+.banner-btn-button{
+    text-decoration: none;
+}
+.center-text-btn{
+    font-weight: bold;
+    font-size: large;
+}
+.btn-content{
+    background: linear-gradient(90deg,#1e9ace 55%,#ac6be5 88%);
+    padding: 15px 24px;
+    display: flex;
+    gap: 15px;
+    border-radius: 8px; 
+    color: #ffffff;
+    transition: all 0.3s;
+}
+.right-arrow-btn{
+    opacity: 1;
+    transition: all 0.5s;
+}
+.left-arrow-btn{
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: all 0.5s;
+}
+.btn-content:hover{
+    transform: translateY(-8px);
+}
+.btn-content:hover .right-arrow-btn{
+    opacity: 0;
+    transform: translateX(40px);
+}
+.btn-content:hover .left-arrow-btn{
+    opacity: 1;
+    transform: translateX(10px);
+}
 
 
 
@@ -445,6 +531,13 @@ body {
         display: flex;
     }
 
+    .dts-header-navbar {
+        display: none;
+    }
+
+    .banner-left-item {
+        width: 100%;
+    }
 }
 
 @media (max-width:950px) {
