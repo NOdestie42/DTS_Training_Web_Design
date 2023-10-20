@@ -3,6 +3,13 @@
     src: url(content/Euclid\ Circular\ B\ Light.ttf);
 }
 
+body {
+    overflow-x: hidden;
+}
+
+/* body::-webkit-scrollbar {
+    display: none;
+} */
 * {
     box-sizing: border-box;
     margin: 0%;
@@ -91,7 +98,6 @@
 
 .search-form-button:hover {
     box-shadow: rgba(75, 75, 80, 0.281) 0px 7px 19px 0px;
-    transform: scale(1);
 }
 
 .dts-header-search-items {
@@ -237,6 +243,15 @@
     line-height: 30px;
 }
 
+.fa-angle-down {
+    transition: all 0.2s;
+}
+
+.header-nav-item:hover .fa-angle-down {
+    transition: all 0.2s;
+    transform: rotate(180deg);
+}
+
 .header-nav-item:hover .nav-hover-drop {
     display: block;
 }
@@ -255,6 +270,7 @@
 }
 
 .dts-nav-dropdown {
+    z-index: -1;
     position: relative;
 }
 
@@ -291,6 +307,8 @@
     background-color: #dddddd79;
     border-radius: 5px;
     color: #0d6efd;
+    transition: all 0.5s;
+
 }
 
 .main-heading-h1 {
@@ -310,10 +328,11 @@
 
 .header-nav-item:hover .main-heading {
     display: block;
+    transition: all 1.4s;
 }
 
 .main-heading-h1 {
-    padding: 35px 8px;
+    padding: 35px 15px;
     background: linear-gradient(45deg, #163381 64%, #5d55cf 89%);
     color: #ffffff;
 }
@@ -349,6 +368,7 @@
     display: flex;
     gap: 30px;
     padding: 0px 20px;
+    background-color: #ffffff;
 }
 
 .horizen-line {
@@ -357,8 +377,6 @@
 }
 
 .skill-text-img {
-
-
     background-image: url(content/quiz.jpg);
     background-position: right;
     background-size: cover;
@@ -379,6 +397,7 @@
     flex-flow: column wrap;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     display: none;
+    transition: all 0.3s;
 }
 
 .header-nav-item:hover .drop-skill-part {
@@ -389,6 +408,8 @@
     display: flex;
     gap: 30px;
     padding: 30px 20px;
+    background-color: #ffffff;
+
 }
 
 
@@ -424,9 +445,6 @@
         display: flex;
     }
 
-    .dts-header-navbar {
-        display: none;
-    }
 }
 
 @media (max-width:950px) {
@@ -446,5 +464,12 @@
 
     .dts-header-head {
         padding: 10px 15px 10px 15px;
+    }
+
+}
+
+@media (max-width:770px) {
+    .home-center-part {
+        display: none;
     }
 }

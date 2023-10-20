@@ -1,0 +1,72 @@
+<style>
+    .left-home-btn {
+        text-decoration: none;
+        color: #ffffff;
+        background: linear-gradient(90deg, #3b9ee4 12%, #9d3dc3 84%);
+        padding: 20px 20px;
+        border-radius: 8px;
+    }
+
+    .left-home-btn:hover {
+        transition: all 0.4s;
+        transform: translateY(-2px);
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 80px 20px;
+    }
+
+    .left-button-arrow-left {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    .left-home-btn:hover .left-button-arrow-left {
+        transition: all 0.8s;
+        opacity: 2;
+        transform: translateX(8px);
+    }
+
+    .left-button-arrow-right {
+        opacity: 1;
+    }
+
+    .left-home-btn:hover .left-button-arrow-right {
+        transition: all 0.8s;
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    .left-spans {
+        display: flex;
+        gap: 20px;
+    }
+</style>
+<div class="home-left-part">
+    <div class="top-lable">
+        <span class="lable-trop">
+            🏆
+        </span>
+        <span class="lable-text">The Leader on Online Leearing</span>
+    </div>
+    <h1 class="left-heading-text">
+        Unlock Your Potential with Our IT Training Programs.
+    </h1>
+    <p class="left-para-text">
+        Learn the latest and advance Courses. Stay Ahead of the Technology Curve with Expert-Led
+        Courses.
+    </p>
+    <div class="left-buttons">
+        <a href="#" class="left-home-btn">
+            <div class="left-spans">
+                <span class="left-button-arrow-left"><i class="fa-solid fa-arrow-right"></i></span>
+                <span class="left-button-text">View Course</span>
+                <span class="left-button-arrow-right"><i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+        </a>
+        <a href="#" class="left-home-btn">
+            <div class="left-spans">
+                <span class="left-button-arrow-left"><i class="fa-solid fa-arrow-right"></i></span>
+                <span class="left-button-text">Enroll Now</span>
+                <span class="left-button-arrow-right"><i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+        </a>
+    </div>
+</div>
