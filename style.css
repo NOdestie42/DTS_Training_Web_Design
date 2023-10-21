@@ -5,11 +5,14 @@
 
 body {
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    behavior: smooth;
 }
 
-/* body::-webkit-scrollbar {
+body::-webkit-scrollbar {
     display: none;
-} */
+}
+
 * {
     box-sizing: border-box;
     margin: 0%;
@@ -46,6 +49,10 @@ body {
     list-style: none;
     gap: 20px;
     align-items: center;
+}
+
+.categorie-option {
+    z-index: 2;
 }
 
 .dts-header-phone-mail {
@@ -270,7 +277,7 @@ body {
 }
 
 .dts-nav-dropdown {
-    z-index: -1;
+    z-index: 3;
     position: relative;
 }
 
@@ -411,18 +418,41 @@ body {
     background-color: #ffffff;
 }
 
+
+
 /* ------------------Home Bannner Start-----------------  */
 
 .home-banner {
     background-image: url(content/bg-g1.webp);
     background-position: top center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.home-banner-section {
+    position: relative;
+}
+
+.home-banner::after {
+    content: "";
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    background: url(content/banner-bg-shape-1.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 145px;
+    z-index: 1;
+}
+
 
 .banner-content {
     padding: 0px 35px;
 }
 
+/* Home Bannner left Start  */
 .banner-left-item {
     width: 250px;
     display: flex;
@@ -434,7 +464,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     padding: 50px 0px;
 }
 
@@ -462,48 +492,145 @@ body {
     font-weight: 600;
     color: #8a90a3;
 }
-.banner-btns{
+
+.banner-btns {
     display: flex;
     flex-flow: column wrap;
     gap: 15px;
     padding: 30px 5px;
 }
-.banner-btn-button{
+
+.banner-btn-button {
     text-decoration: none;
 }
-.center-text-btn{
+
+.center-text-btn {
     font-weight: bold;
     font-size: large;
 }
-.btn-content{
-    background: linear-gradient(90deg,#1e9ace 55%,#ac6be5 88%);
+
+.btn-content {
+    background: linear-gradient(90deg, #1e9ace 55%, #ac6be5 88%);
     padding: 15px 24px;
     display: flex;
     gap: 15px;
-    border-radius: 8px; 
+    border-radius: 8px;
     color: #ffffff;
     transition: all 0.3s;
 }
-.right-arrow-btn{
+
+.right-arrow-btn {
     opacity: 1;
     transition: all 0.5s;
 }
-.left-arrow-btn{
+
+.left-arrow-btn {
     opacity: 0;
     transform: translateX(-40px);
     transition: all 0.5s;
 }
-.btn-content:hover{
+
+.btn-content:hover {
     transform: translateY(-8px);
 }
-.btn-content:hover .right-arrow-btn{
+
+.btn-content:hover .right-arrow-btn {
     opacity: 0;
     transform: translateX(40px);
 }
-.btn-content:hover .left-arrow-btn{
+
+.btn-content:hover .left-arrow-btn {
     opacity: 1;
     transform: translateX(10px);
 }
+
+/* Home left Banner End  */
+
+
+.banner-center-item {
+    position: relative;
+    padding: 50px 0px;
+    z-index: 1;
+}
+
+.centeral-img-beside1 {
+    position: absolute;
+    top: 24%;
+    z-index: -2;
+}
+
+.centeral-img-beside2 {
+    position: absolute;
+    top: 25%;
+    left: 7%;
+    z-index: -2;
+
+}
+
+
+.swiper {
+    width: 21em;
+    height: 33em;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.swiper-slide:nth-child(1n) {
+    background-color: rgb(255, 0, 0);
+}
+
+.swiper-slide:nth-child(2n) {
+    background-color: rgb(208, 255, 0);
+}
+
+.swiper-slide:nth-child(3n) {
+    background-color: rgb(136, 255, 0);
+}
+
+.banner-right-item {
+    padding-bottom: 160px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -538,6 +665,10 @@ body {
     .banner-left-item {
         width: 100%;
     }
+     .banner-center-item {
+        display: none;
+    }
+    
 }
 
 @media (max-width:950px) {
@@ -558,11 +689,20 @@ body {
     .dts-header-head {
         padding: 10px 15px 10px 15px;
     }
-
+    .banner-flex-items {
+       display: block;
+        padding: 50px 0px;
+    }
 }
 
 @media (max-width:770px) {
-    .home-center-part {
-        display: none;
+    .swiper{
+        width: 70%;
+        height: 32em;
     }
+   
+}
+
+@media (max-width:415px) {
+    
 }

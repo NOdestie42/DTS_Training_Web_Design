@@ -1,72 +1,102 @@
-<style>
-    .left-home-btn {
-        text-decoration: none;
-        color: #ffffff;
-        background: linear-gradient(90deg, #3b9ee4 12%, #9d3dc3 84%);
-        padding: 20px 20px;
-        border-radius: 8px;
-    }
+<!DOCTYPE html>
+<html lang="en">
 
-    .left-home-btn:hover {
-        transition: all 0.4s;
-        transform: translateY(-2px);
-        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 80px 20px;
-    }
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-    .left-button-arrow-left {
-        opacity: 0;
-        transform: translateX(-30px);
-    }
+    <!-- Demo styles -->
+    <style>
+        .swiper {
+            width: 35%;
+            height: 440px;
+        }
 
-    .left-home-btn:hover .left-button-arrow-left {
-        transition: all 0.8s;
-        opacity: 2;
-        transform: translateX(8px);
-    }
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 18px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #fff;
+        }
 
-    .left-button-arrow-right {
-        opacity: 1;
-    }
+        .swiper-slide:nth-child(1n) {
+            background-color: rgb(206, 17, 17);
+        }
 
-    .left-home-btn:hover .left-button-arrow-right {
-        transition: all 0.8s;
-        opacity: 0;
-        transform: translateX(50px);
-    }
+        .swiper-slide:nth-child(2n) {
+            background-color: rgb(0, 140, 255);
+        }
 
-    .left-spans {
-        display: flex;
-        gap: 20px;
-    }
-</style>
-<div class="home-left-part">
-    <div class="top-lable">
-        <span class="lable-trop">
-            🏆
-        </span>
-        <span class="lable-text">The Leader on Online Leearing</span>
-    </div>
-    <h1 class="left-heading-text">
-        Unlock Your Potential with Our IT Training Programs.
-    </h1>
-    <p class="left-para-text">
-        Learn the latest and advance Courses. Stay Ahead of the Technology Curve with Expert-Led
-        Courses.
-    </p>
-    <div class="left-buttons">
-        <a href="#" class="left-home-btn">
-            <div class="left-spans">
-                <span class="left-button-arrow-left"><i class="fa-solid fa-arrow-right"></i></span>
-                <span class="left-button-text">View Course</span>
-                <span class="left-button-arrow-right"><i class="fa-solid fa-arrow-right"></i></span>
+        .swiper-slide:nth-child(3n) {
+            background-color: rgb(10, 184, 111);
+        }
+
+        .swiper-slide:nth-child(4n) {
+            background-color: rgb(211, 122, 7);
+        }
+
+        .swiper-slide:nth-child(5n) {
+            background-color: rgb(118, 163, 12);
+        }
+
+        .swiper-slide:nth-child(6n) {
+            background-color: rgb(180, 10, 47);
+        }
+
+        .swiper-slide:nth-child(7n) {
+            background-color: rgb(35, 99, 19);
+        }
+
+        .swiper-slide:nth-child(8n) {
+            background-color: rgb(0, 68, 255);
+        }
+
+        .swiper-slide:nth-child(9n) {
+            background-color: rgb(218, 12, 218);
+        }
+
+        .swiper-slide:nth-child(10n) {
+            background-color: rgb(54, 94, 77);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="container" style="display: flex;flex-flow: row wrap;align-items: center;justify-content: center;">
+        <div class="c"><h1>asa</h1></div>
+        <div class="ccs"><h1>asa</h1></div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
             </div>
-        </a>
-        <a href="#" class="left-home-btn">
-            <div class="left-spans">
-                <span class="left-button-arrow-left"><i class="fa-solid fa-arrow-right"></i></span>
-                <span class="left-button-text">Enroll Now</span>
-                <span class="left-button-arrow-right"><i class="fa-solid fa-arrow-right"></i></span>
-            </div>
-        </a>
+        </div>
     </div>
-</div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cards",
+            grabCursor: true,
+        });
+    </script>
+</body>
+
+</html>
