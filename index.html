@@ -117,7 +117,9 @@
                                     <i class="fa-regular fa-user"></i>
                                 </div>
                                 <div class="dts-right-side-icon">
-                                    <i class="fa-solid fa-bars"></i>
+                                    <a href="#" class="sidebar-collapes" onclick="openNavSide()">
+                                        <i class="fa-solid fa-bars"></i>
+                                    </a>
                                 </div>
                             </div>
 
@@ -246,286 +248,389 @@
                 </div>
             </div>
         </header>
+        <section class="dts-sidebar">
+            <div class="dts-sidebar-side">
+                <div class="sidebar">
+                    <div class="sidebar-heading-header">
+                        <div class="sidebar-logo-part">
+                            <img src="content/header.png" alt="webpage-logo" class="sidebar-img">
+                            <a href="#" class="side-show" onclick="hideNavSide()">
+                                <i class="fa-solid fa-xl fa-xmark"></i>
+                            </a>
+
+                        </div>
+                        <p class="sidebar-para">
+                            Histudy is a education website template. You can customize all.
+                        </p>
+                        <div class="sd-phone-mail">
+                            <div class="sd-mail">
+                                <span class="sidebar-mail-icon"><i class="fa-solid fa-envelope"></i></span>
+                                <span class="sidebar-mail-text">example@gmail.com</span>
+                            </div>
+                            <div class="sd-phone">
+                                <span class="sidebar-mail-icon"><i class="fa-solid fa-phone"></i></span>
+                                <span class="sidebar-mail-text">(302)555-710</span>
+                            </div>
+                        </div>
+                        <hr class="sd-horiz-line">
+                    </div>
+                    <div class="sidebar-list-part">
+                        <nav class="sd-nav">
+                            <ul class="sd-ulist">
+                                <li class="sd-ulist-item">
+                                    <a href="#" class="sd-ancor">
+                                        <div class="sd-anc-spans">
+                                            <span class="ds-ancor-span-text">Home</span>
+                                            <span class="ds-ancor-span-icon">+</span>
+                                        </div>
+                                    </a>
+                                    <hr class="sd-ancor-horiz-line">
+                                </li>
+                                <li class="sd-ulist-item">
+                                    <a href="#" class="sd-ancor">
+                                        <div class="sd-anc-spans">
+                                            <span class="ds-ancor-span-text">Courses</span>
+                                            <span class="ds-ancor-span-icon">+</span>
+                                        </div>
+                                    </a>
+                                    <hr class="sd-ancor-horiz-line">
+                                </li>
+                                <li class="sd-ulist-item">
+                                    <a href="#" class="sd-ancor">
+                                        <div class="sd-anc-spans">
+                                            <span class="ds-ancor-span-text">Dashboard</span>
+                                            <span class="ds-ancor-span-icon">+</span>
+                                        </div>
+                                    </a>
+                                    <hr class="sd-ancor-horiz-line">
+                                </li>
+                                <li class="sd-ulist-item">
+                                    <a href="#" class="sd-ancor">
+                                        <div class="sd-anc-spans">
+                                            <span class="ds-ancor-span-text">Pages</span>
+                                            <span class="ds-ancor-span-icon">+</span>
+                                        </div>
+                                    </a>
+                                    <hr class="sd-ancor-horiz-line">
+                                </li>
+                                <li class="sd-ulist-item">
+                                    <a href="#" class="sd-ancor">
+                                        <div class="sd-anc-spans">
+                                            <span class="ds-ancor-span-text">Element</span>
+                                            <span class="ds-ancor-span-icon">+</span>
+                                        </div>
+                                    </a>
+                                    <hr class="sd-ancor-horiz-line">
+                                </li>
+                                <li class="sd-ulist-item">
+                                    <a href="#" class="sd-ancor">
+                                        <div class="sd-anc-spans">
+                                            <span class="ds-ancor-span-text">Blogs</span>
+                                            <span class="ds-ancor-span-icon">+</span>
+                                        </div>
+                                    </a>
+                                    <hr class="sd-ancor-horiz-line">
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="sd-btn">
+                            <a href="#" class="sd-btn-enroll">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
 
-
-    <section class="home-banner-section">
-        <div class="home-banner">
-            <div class="banner-content">
-                <div class="banner-flex-items">
-                    <div class="banner-left-item">
-                        <div class="banner-left-lable">
-                            <span class="lable-icon">🏆</span>
-                            <span class="lable-text">The Leader in Online Learing</span>
-                        </div>
-                        <div class="banner-headings">
-                            <div class="left-head">
-                                <h1 class="ban-head">Unlock Your Potential with Our IT Training Programs.</h1>
+    <main>
+        <section class="home-banner-section">
+            <div class="home-banner">
+                <div class="banner-content">
+                    <div class="banner-flex-items">
+                        <div class="banner-left-item">
+                            <div class="banner-left-lable">
+                                <span class="lable-icon">🏆</span>
+                                <span class="lable-text">The Leader in Online Learing</span>
+                            </div>
+                            <div class="banner-headings">
+                                <div class="left-head">
+                                    <h1 class="ban-head">Unlock Your Potential with Our IT Training Programs.</h1>
+                                </div>
+                            </div>
+                            <div class="banner-para-text">
+                                <div class="left-para">
+                                    <p class="ban-para">Learn the latest and advance Courses. Stay Ahead of the
+                                        Technology
+                                        Curve with Expert-Led Courses.</p>
+                                </div>
+                            </div>
+                            <div class="banner-btns">
+                                <a href="#" class="banner-btn-button">
+                                    <div class="btn-content">
+                                        <span class="left-arrow-btn"><i class="fa-solid fa-arrow-right"></i></span>
+                                        <span class="center-text-btn">View Course</span>
+                                        <span class="right-arrow-btn"><i class="fa-solid fa-arrow-right"></i></span>
+                                    </div>
+                                </a>
+                                <a href="#" class="banner-btn-button">
+                                    <div class="btn-content">
+                                        <span class="left-arrow-btn"><i class="fa-solid fa-arrow-right"></i></span>
+                                        <span class="center-text-btn">Enroll Now</span>
+                                        <span class="right-arrow-btn"><i class="fa-solid fa-arrow-right"></i></span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                        <div class="banner-para-text">
-                            <div class="left-para">
-                                <p class="ban-para">Learn the latest and advance Courses. Stay Ahead of the Technology
-                                    Curve with Expert-Led Courses.</p>
+                        <div class="banner-center-item">
+                            <div class="center-imgs">
+                                <img src="content/Untitled-1-01.png" class="centeral-man" alt="Untitled-1-01.png"
+                                    height="590px">
+                            </div>
+                            <div class="centeral-img-beside1">
+                                <img src="content/shape-01.png" alt="centersideimg">
+                            </div>
+                            <div class="centeral-img-beside2">
+                                <img src="content/shape-02.png" alt="centersideimg">
                             </div>
                         </div>
-                        <div class="banner-btns">
-                            <a href="#" class="banner-btn-button">
-                                <div class="btn-content">
-                                    <span class="left-arrow-btn"><i class="fa-solid fa-arrow-right"></i></span>
-                                    <span class="center-text-btn">View Course</span>
-                                    <span class="right-arrow-btn"><i class="fa-solid fa-arrow-right"></i></span>
-                                </div>
-                            </a>
-                            <a href="#" class="banner-btn-button">
-                                <div class="btn-content">
-                                    <span class="left-arrow-btn"><i class="fa-solid fa-arrow-right"></i></span>
-                                    <span class="center-text-btn">Enroll Now</span>
-                                    <span class="right-arrow-btn"><i class="fa-solid fa-arrow-right"></i></span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="banner-center-item">
-                        <div class="center-imgs">
-                            <img src="content/Untitled-1-01.png" class="centeral-man" alt="Untitled-1-01.png"
-                                height="590px">
-                        </div>
-                        <div class="centeral-img-beside1">
-                            <img src="content/shape-01.png" alt="centersideimg">
-                        </div>
-                        <div class="centeral-img-beside2">
-                            <img src="content/shape-02.png" alt="centersideimg">
-                        </div>
-                    </div>
-                    <div class="banner-right-item">
-                        <div class="swiper mySwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="slider-content">
-                                        <div class="slide-card-head-img">
-                                            <a href="#" class="slide-img-ancor">
-                                                <img src="content/DM Hero-02.jpg" alt="first-card-img"
-                                                    class="slide-img">
-                                            </a>
-                                        </div>
-                                        <div class="slide-card-details">
-                                            <div class="slide-card-intro">
-                                                <ul class="card-slide-ulist">
-                                                    <li class="intro-item">
-                                                        <span class="card-slide-icon"><svg
-                                                                xmlns="http://www.w3.org/2000/svg" width="18"
+                        <div class="banner-right-item">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="slider-content">
+                                            <div class="slide-card-head-img">
+                                                <a href="#" class="slide-img-ancor">
+                                                    <img src="content/DM Hero-02.jpg" alt="first-card-img"
+                                                        class="slide-img">
+                                                </a>
+                                            </div>
+                                            <div class="slide-card-details">
+                                                <div class="slide-card-intro">
+                                                    <ul class="card-slide-ulist">
+                                                        <li class="intro-item">
+                                                            <span class="card-slide-icon"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                    height="18" viewBox="0 0 24 24" fill="none"
+                                                                    stroke="currentColor" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    class="lucide lucide-book">
+                                                                    <path
+                                                                        d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+                                                                </svg></span>
+                                                            <span class="card-slide-text">45+ Practical Classes</span>
+                                                        </li>
+                                                        <li class="intro-item">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
                                                                 height="18" viewBox="0 0 24 24" fill="none"
                                                                 stroke="currentColor" stroke-width="2"
                                                                 stroke-linecap="round" stroke-linejoin="round"
-                                                                class="lucide lucide-book">
-                                                                <path
-                                                                    d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
-                                                            </svg></span>
-                                                        <span class="card-slide-text">45+ Practical Classes</span>
-                                                    </li>
-                                                    <li class="intro-item">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" class="lucide lucide-users">
-                                                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                                                            <circle cx="9" cy="7" r="4" />
-                                                            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                                                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                                                        </svg>
-                                                        <span class="card-slide-text">254+ Students</span>
-                                                    </li>
-                                                </ul>
-                                                <h3 class="slide-card-heading">Web Development</h3>
-                                                <p class="slide-card-paraText">Master the Art of Web Development and
-                                                    Create Stunning Online Experiences with Our Comprehensive Course</p>
-                                                <div class="slide-card-ratings">
-                                                    <div class="ratings-icon">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </div>
-                                                    <span class="rating-text">
-                                                        (78 Reviews)
-                                                    </span>
-                                                </div>
-                                                <div class="slide-footer-btn">
-                                                    <div class="slide-footer-text-part">
-                                                        <span class="ft-normal-text">
-                                                            14000
-                                                        </span>
-                                                        <span class="ft-line-text">
-                                                            22000
+                                                                class="lucide lucide-users">
+                                                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                                                <circle cx="9" cy="7" r="4" />
+                                                                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                                            </svg>
+                                                            <span class="card-slide-text">254+ Students</span>
+                                                        </li>
+                                                    </ul>
+                                                    <h3 class="slide-card-heading">Web Development</h3>
+                                                    <p class="slide-card-paraText">Master the Art of Web Development and
+                                                        Create Stunning Online Experiences with Our Comprehensive Course
+                                                    </p>
+                                                    <div class="slide-card-ratings">
+                                                        <div class="ratings-icon">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span class="rating-text">
+                                                            (78 Reviews)
                                                         </span>
                                                     </div>
-                                                    <div class="slide-btn-part">
-                                                        <a href="#" class="slide-btn">
-                                                            <div class="slide-btns-span">
-                                                                <span class="ft-btn-text">
-                                                                    learn More
-                                                                </span>
-                                                                <span class="ft-btn-icon">
-                                                                    <i class="fa-solid fa-sm fa-arrow-right ft-arrow"></i>
-                                                                </span>
-                                                            </div>
-                                                        </a>
+                                                    <div class="slide-footer-btn">
+                                                        <div class="slide-footer-text-part">
+                                                            <span class="ft-normal-text">
+                                                                14000
+                                                            </span>
+                                                            <span class="ft-line-text">
+                                                                22000
+                                                            </span>
+                                                        </div>
+                                                        <div class="slide-btn-part">
+                                                            <a href="#" class="slide-btn">
+                                                                <div class="slide-btns-span">
+                                                                    <span class="ft-btn-text">
+                                                                        learn More
+                                                                    </span>
+                                                                    <span class="ft-btn-icon">
+                                                                        <i
+                                                                            class="fa-solid fa-sm fa-arrow-right ft-arrow"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="slider-content">
-                                        <div class="slide-card-head-img">
-                                            <a href="#" class="slide-img-ancor">
-                                                <img src="content/graphic-desgining-course.jpg" alt="first-card-img"
-                                                    class="slide-img">
-                                            </a>
-                                        </div>
-                                        <div class="slide-card-details">
-                                            <div class="slide-card-intro">
-                                                <ul class="card-slide-ulist">
-                                                    <li class="intro-item">
-                                                        <span class="card-slide-icon"><svg
-                                                                xmlns="http://www.w3.org/2000/svg" width="18"
+                                    <div class="swiper-slide">
+                                        <div class="slider-content">
+                                            <div class="slide-card-head-img">
+                                                <a href="#" class="slide-img-ancor">
+                                                    <img src="content/graphic-desgining-course.jpg" alt="first-card-img"
+                                                        class="slide-img">
+                                                </a>
+                                            </div>
+                                            <div class="slide-card-details">
+                                                <div class="slide-card-intro">
+                                                    <ul class="card-slide-ulist">
+                                                        <li class="intro-item">
+                                                            <span class="card-slide-icon"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                    height="18" viewBox="0 0 24 24" fill="none"
+                                                                    stroke="currentColor" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    class="lucide lucide-book">
+                                                                    <path
+                                                                        d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+                                                                </svg></span>
+                                                            <span class="card-slide-text">45+ Practical Classes</span>
+                                                        </li>
+                                                        <li class="intro-item">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
                                                                 height="18" viewBox="0 0 24 24" fill="none"
                                                                 stroke="currentColor" stroke-width="2"
                                                                 stroke-linecap="round" stroke-linejoin="round"
-                                                                class="lucide lucide-book">
-                                                                <path
-                                                                    d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
-                                                            </svg></span>
-                                                        <span class="card-slide-text">45+ Practical Classes</span>
-                                                    </li>
-                                                    <li class="intro-item">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" class="lucide lucide-users">
-                                                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                                                            <circle cx="9" cy="7" r="4" />
-                                                            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                                                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                                                        </svg>
-                                                        <span class="card-slide-text">254+ Students</span>
-                                                    </li>
-                                                </ul>
-                                                <h3 class="slide-card-heading">Graphic Designing</h3>
-                                                <p class="slide-card-paraText">Master the Art of Web Development and
-                                                    Create Stunning Online Experiences with Our Comprehensive Course</p>
-                                                <div class="slide-card-ratings">
-                                                    <div class="ratings-icon">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </div>
-                                                    <span class="rating-text">
-                                                        (78 Reviews)
-                                                    </span>
-                                                </div>
-                                                <div class="slide-footer-btn">
-                                                    <div class="slide-footer-text-part">
-                                                        <span class="ft-normal-text">
-                                                            14000
-                                                        </span>
-                                                        <span class="ft-line-text">
-                                                            22000
+                                                                class="lucide lucide-users">
+                                                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                                                <circle cx="9" cy="7" r="4" />
+                                                                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                                            </svg>
+                                                            <span class="card-slide-text">254+ Students</span>
+                                                        </li>
+                                                    </ul>
+                                                    <h3 class="slide-card-heading">Graphic Designing</h3>
+                                                    <p class="slide-card-paraText">Master the Art of Web Development and
+                                                        Create Stunning Online Experiences with Our Comprehensive Course
+                                                    </p>
+                                                    <div class="slide-card-ratings">
+                                                        <div class="ratings-icon">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span class="rating-text">
+                                                            (78 Reviews)
                                                         </span>
                                                     </div>
-                                                    <div class="slide-btn-part">
-                                                        <a href="#" class="slide-btn">
-                                                            <div class="slide-btns-span">
-                                                                <span class="ft-btn-text">
-                                                                    learn More
-                                                                </span>
-                                                                <span class="ft-btn-icon">
-                                                                    <i class="fa-solid fa-sm fa-arrow-right ft-arrow"></i>
-                                                                </span>
-                                                            </div>
-                                                        </a>
+                                                    <div class="slide-footer-btn">
+                                                        <div class="slide-footer-text-part">
+                                                            <span class="ft-normal-text">
+                                                                14000
+                                                            </span>
+                                                            <span class="ft-line-text">
+                                                                22000
+                                                            </span>
+                                                        </div>
+                                                        <div class="slide-btn-part">
+                                                            <a href="#" class="slide-btn">
+                                                                <div class="slide-btns-span">
+                                                                    <span class="ft-btn-text">
+                                                                        learn More
+                                                                    </span>
+                                                                    <span class="ft-btn-icon">
+                                                                        <i
+                                                                            class="fa-solid fa-sm fa-arrow-right ft-arrow"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="slider-content">
-                                        <div class="slide-card-head-img">
-                                            <a href="#" class="slide-img-ancor">
-                                                <img src="content/digital-markiting-course.jpg" alt="first-card-img"
-                                                    class="slide-img">
-                                            </a>
-                                        </div>
-                                        <div class="slide-card-details">
-                                            <div class="slide-card-intro">
-                                                <ul class="card-slide-ulist">
-                                                    <li class="intro-item">
-                                                        <span class="card-slide-icon"><svg
-                                                                xmlns="http://www.w3.org/2000/svg" width="18"
+                                    <div class="swiper-slide">
+                                        <div class="slider-content">
+                                            <div class="slide-card-head-img">
+                                                <a href="#" class="slide-img-ancor">
+                                                    <img src="content/digital-markiting-course.jpg" alt="first-card-img"
+                                                        class="slide-img">
+                                                </a>
+                                            </div>
+                                            <div class="slide-card-details">
+                                                <div class="slide-card-intro">
+                                                    <ul class="card-slide-ulist">
+                                                        <li class="intro-item">
+                                                            <span class="card-slide-icon"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                    height="18" viewBox="0 0 24 24" fill="none"
+                                                                    stroke="currentColor" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    class="lucide lucide-book">
+                                                                    <path
+                                                                        d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+                                                                </svg></span>
+                                                            <span class="card-slide-text">45+ Practical Classes</span>
+                                                        </li>
+                                                        <li class="intro-item">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
                                                                 height="18" viewBox="0 0 24 24" fill="none"
                                                                 stroke="currentColor" stroke-width="2"
                                                                 stroke-linecap="round" stroke-linejoin="round"
-                                                                class="lucide lucide-book">
-                                                                <path
-                                                                    d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
-                                                            </svg></span>
-                                                        <span class="card-slide-text">45+ Practical Classes</span>
-                                                    </li>
-                                                    <li class="intro-item">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" class="lucide lucide-users">
-                                                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                                                            <circle cx="9" cy="7" r="4" />
-                                                            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                                                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                                                        </svg>
-                                                        <span class="card-slide-text">254+ Students</span>
-                                                    </li>
-                                                </ul>
-                                                <h3 class="slide-card-heading">Digital Marketing</h3>
-                                                <p class="slide-card-paraText">Master the Art of Web Development and
-                                                    Create Stunning Online Experiences with Our Comprehensive Course</p>
-                                                <div class="slide-card-ratings">
-                                                    <div class="ratings-icon">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </div>
-                                                    <span class="rating-text">
-                                                        (78 Reviews)
-                                                    </span>
-                                                </div>
-                                                <div class="slide-footer-btn">
-                                                    <div class="slide-footer-text-part">
-                                                        <span class="ft-normal-text">
-                                                            14000
-                                                        </span>
-                                                        <span class="ft-line-text">
-                                                            22000
+                                                                class="lucide lucide-users">
+                                                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                                                <circle cx="9" cy="7" r="4" />
+                                                                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                                            </svg>
+                                                            <span class="card-slide-text">254+ Students</span>
+                                                        </li>
+                                                    </ul>
+                                                    <h3 class="slide-card-heading">Digital Marketing</h3>
+                                                    <p class="slide-card-paraText">Master the Art of Web Development and
+                                                        Create Stunning Online Experiences with Our Comprehensive Course
+                                                    </p>
+                                                    <div class="slide-card-ratings">
+                                                        <div class="ratings-icon">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span class="rating-text">
+                                                            (78 Reviews)
                                                         </span>
                                                     </div>
-                                                    <div class="slide-btn-part">
-                                                        <a href="#" class="slide-btn">
-                                                            <div class="slide-btns-span">
-                                                                <span class="ft-btn-text">
-                                                                    learn More
-                                                                </span>
-                                                                <span class="ft-btn-icon">
-                                                                    <i class="fa-solid fa-sm fa-arrow-right ft-arrow"></i>
-                                                                </span>
-                                                            </div>
-                                                        </a>
+                                                    <div class="slide-footer-btn">
+                                                        <div class="slide-footer-text-part">
+                                                            <span class="ft-normal-text">
+                                                                14000
+                                                            </span>
+                                                            <span class="ft-line-text">
+                                                                22000
+                                                            </span>
+                                                        </div>
+                                                        <div class="slide-btn-part">
+                                                            <a href="#" class="slide-btn">
+                                                                <div class="slide-btns-span">
+                                                                    <span class="ft-btn-text">
+                                                                        learn More
+                                                                    </span>
+                                                                    <span class="ft-btn-icon">
+                                                                        <i
+                                                                            class="fa-solid fa-sm fa-arrow-right ft-arrow"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -537,8 +642,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
 
 

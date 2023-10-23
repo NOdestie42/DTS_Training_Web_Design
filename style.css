@@ -419,7 +419,137 @@ body::-webkit-scrollbar {
     background-color: #ffffff;
 }
 
+.dts-sidebar {
+    /* display: none; */
+    transition: all 0.5s;
+    position: absolute;
+    top: 0;
+}
 
+/* .dts-sidebar-coll {
+    transition: all 0.5s;
+    transform: translateX(-100%);
+
+} */
+.sidebar-collapes {
+    color: #192335;
+}
+
+.side-show {
+    color: #192335;
+}
+
+.dts-sidebar-side {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    position: fixed;
+    z-index: 4;
+    background-color: #fff;
+    width: 0%;
+    height: 100vh;
+    transition: all 0.4s;
+}
+
+.sidebar-heading-header {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+    padding-bottom: 35px;
+}
+
+.sidebar {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 40px;
+}
+
+.sidebar-logo-part {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.sidebar-img {
+    width: 80%;
+}
+
+.sidebar-para {
+    color: #676d7a;
+    font-size: medium;
+    font-weight: 600;
+    padding: 5px 40px 20px 0px;
+}
+
+.sd-phone-mail {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 0.9em;
+    gap: 9px;
+}
+
+.sd-mail,
+.sd-phone {
+    color: #676d7a;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 5px;
+}
+
+.sd-horiz-line {
+    color: #9ca2ad;
+}
+
+.sidebar-list-part {
+    width: 100%;
+}
+
+.sd-ulist {
+    list-style: none;
+    display: block;
+}
+
+.sd-anc-spans {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sd-ancor {
+    line-height: 35px;
+    color: #192335;
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 0px;
+}
+
+.ds-ancor-span-icon {
+    font-size: larger;
+}
+
+.sd-ancor-horiz-line {
+    color: #ffffff9a;
+    height: 1px;
+    background-color: #aaa5a57e;
+    border: none;
+}
+
+.sd-btn {
+    padding: 40px 0px;
+    text-align: center;
+}
+
+.sd-btn-enroll {
+    text-decoration: none;
+    padding: 10px 8em;
+    border: 2px solid black;
+    border-radius: 20px;
+
+}
 
 /* ------------------Home Bannner Start-----------------  */
 
@@ -649,6 +779,7 @@ body::-webkit-scrollbar {
 .slide-card-ratings {
     display: flex;
     flex-wrap: wrap;
+    gap: 15px;
     padding: 25px 20px;
     align-items: center;
 }
@@ -802,6 +933,9 @@ body::-webkit-scrollbar {
         display: none;
     }
 
+    /* .dts-sidebar {
+        display: block;
+    } */
 }
 
 @media (max-width:950px) {
@@ -836,4 +970,13 @@ body::-webkit-scrollbar {
         height: max-content;
     }
 
+    /* .dts-sidebar-side {
+        width: 50%;
+    } */
+}
+
+@media (max-width:425px) {
+    /* .dts-sidebar-side {
+        width: 90%;
+    } */
 }
