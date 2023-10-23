@@ -539,13 +539,15 @@ body::-webkit-scrollbar {
 }
 
 .sd-btn {
+    width: 100%;
     padding: 40px 0px;
     text-align: center;
+
 }
 
 .sd-btn-enroll {
     text-decoration: none;
-    padding: 10px 8em;
+    padding: 0.7em 22%;
     border: 2px solid black;
     border-radius: 20px;
 
