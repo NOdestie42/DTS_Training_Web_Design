@@ -603,7 +603,7 @@ body::-webkit-scrollbar {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     padding: 50px 0px;
 }
 
@@ -671,6 +671,9 @@ body::-webkit-scrollbar {
 
 .btn-content:hover {
     transform: translateY(-8px);
+    background: linear-gradient(90deg, #ac6be5 55%,#1e9ace  88%);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
 }
 
 .btn-content:hover .right-arrow-btn {
@@ -1063,6 +1066,7 @@ body::-webkit-scrollbar {
 
 .section-sec-cards{
     background-color: #f3f3fd;
+    padding-bottom: 45px;
 
 }
 .sec-card-head{
@@ -1094,10 +1098,50 @@ body::-webkit-scrollbar {
     transform: scale(1.03);
     transition: all 0.2s;
 }
+.dts-banner-btn{
+    text-decoration:none ;
+}
 
+.banner-bottom-btn{
+    background: linear-gradient(90deg, #1e9ace 55%, #ac6be5 88%);
+    padding: 25px 24px;
+    display: flex;
+    gap: 15px;
+    font-weight: bolder;
+    font-size: large;
+    margin: auto;
+    width: max-content;
+    border-radius: 8px;
+    color: #ffffff;
+    transition: all 0.3s;
+}
 
+.banner-bottom-btn:hover {
+    transform: translateY(-8px);
+    background: linear-gradient(90deg, #ac6be5 55%,#1e9ace  88%);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
 
+.banner-bottom-btn:hover .right-arrow-btn {
+    opacity: 0;
+    transform: translateX(40px);
+}
 
+.banner-bottom-btn:hover .left-arrow-btn {
+    opacity: 1;
+    transform: translateX(10px);
+}
+
+.dts-flip-main-heading{
+    font-size: 3.8em;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    color: #673AB7;
+    padding: 90px 0px 30px 0px;  
+}
 
 
 
