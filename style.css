@@ -431,6 +431,10 @@ body::-webkit-scrollbar {
     transform: translateX(-100%);
 
 } */
+.dts-home-main {
+    padding-bottom: 90px;
+}
+
 .sidebar-collapes {
     color: #192335;
 }
@@ -549,7 +553,9 @@ body::-webkit-scrollbar {
     text-decoration: none;
     padding: 0.7em 22%;
     border: 2px solid black;
-    border-radius: 20px;
+    border-radius: 25px;
+    font-weight: bolder;
+    color: #192335;
 
 }
 
@@ -882,6 +888,268 @@ body::-webkit-scrollbar {
     width: 0%;
 } */
 
+.dts-cards-banner-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.8em;
+    text-align: center;
+    color: #192335;
+    font-weight: bolder;
+}
+
+.best-courses {
+    padding-bottom: 5px;
+}
+
+.card-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 27px;
+}
+
+.cardimage {
+    width: 30%;
+    height: 30%;
+}
+
+.card-con {
+    width: 17em;
+    height: 15em;
+    transition: all 0.3s;
+
+}
+
+.card-con:hover {
+    transition: all 0.3s;
+    cursor: pointer;
+    transform: translate(0px, -25px);
+}
+
+.best-card-content {
+    padding: 20px 30px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card-desgin {
+    padding-top: 20px;
+    font-weight: bolder;
+
+}
+
+.card-icon {
+    display: flex;
+    flex-flow: row;
+    align-self: center;
+    gap: 5px;
+}
+
+.card-button {
+    position: relative;
+}
+
+.card-icon::after {
+    content: "";
+    width: 0%;
+    height: 2.3px;
+    position: absolute;
+    top: 27px;
+    background-color: #0d6efd;
+    transition: 0.4s;
+}
+
+.card-icon:hover:after {
+    width: 100%;
+}
+
+.card-icon:hover {
+    color: #0d6efd;
+}
+
+.spa {
+    font-weight: bolder;
+}
+
+.card-content-main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 40px;
+
+}
+
+.best-courses-heading {
+    padding: 60px 10px;
+}
+
+.best-courses {
+    padding-top: 120px;
+}
+
+.course-cards-banner-head-btn {
+    margin: auto;
+    background-color: #E4E9FD;
+    width: max-content;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #0d6efd;
+    font-weight: bolder;
+    font-size: small;
+}
+
+.card-banner-btn-content {
+    padding: 12px 20px;
+    border: 2px solid #163381;
+    border-radius: 35px;
+    width: max-content;
+    margin: auto;
+}
+
+.card-banner-bt {
+    transition: all 0.3s;
+}
+
+.card-banner-bt:hover {
+    transition: all 0.3s;
+    transform: translateY(-10px);
+}
+
+.card-banner-btn {
+    text-decoration: none;
+}
+
+.card-banner-btn-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card-right-arrow {
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+.card-left-arrow {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 0.4s;
+}
+
+.card-banner-btn {
+    color: #192335;
+}
+
+.card-banner-btn:hover .card-left-arrow {
+    opacity: 1;
+    transition: all 0.4s;
+    transform: translateX(0px);
+}
+
+.card-banner-btn:hover .card-right-arrow {
+    opacity: 0;
+    transition: all 0.4s;
+    transform: translateX(30px);
+}
+
+.section-sec-cards{
+    background-color: #f3f3fd;
+
+}
+.sec-card-head{
+    padding: 90px 0px 60px 0px;
+}
+.dts-sec-cards-content{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 50px 30px;
+}
+.dts-second-cards-banner{
+    padding: 20px 35px;
+}
+.sec-slider-content{
+    background-color: #ffffff;
+    width: 22em;
+    height: max-content;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.sec-cards-content{
+    transition: all 0.2s;
+}
+.sec-cards-content:hover{
+    transform: scale(1.03);
+    transition: all 0.2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -934,10 +1202,6 @@ body::-webkit-scrollbar {
     .banner-center-item {
         display: none;
     }
-
-    /* .dts-sidebar {
-        display: block;
-    } */
 }
 
 @media (max-width:950px) {
@@ -971,14 +1235,10 @@ body::-webkit-scrollbar {
         width: 70%;
         height: max-content;
     }
-
-    /* .dts-sidebar-side {
-        width: 50%;
-    } */
 }
 
 @media (max-width:425px) {
-    /* .dts-sidebar-side {
-        width: 90%;
-    } */
+    .sec-slider-content{
+        width: 19em;
+    }
 }
