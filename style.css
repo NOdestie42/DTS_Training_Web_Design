@@ -1011,7 +1011,7 @@ body::-webkit-scrollbar {
     border-radius: 20px;
     color: #0d6efd;
     font-weight: bolder;
-    font-size: small;
+    font-size: medium;
 }
 
 .card-banner-bt {
@@ -1143,9 +1143,10 @@ body::-webkit-scrollbar {
     transform: translateX(10px);
 }
 
-.dts-flip-banner-part{
-    padding: 20px 0px 90px 0px ;
+.dts-flip-banner-part {
+    padding: 20px 0px 90px 0px;
 }
+
 .dts-flip-main-heading {
     font-size: 3.8em;
     align-items: center;
@@ -1173,7 +1174,7 @@ body::-webkit-scrollbar {
     position: relative;
     transform-style: preserve-3d;
     width: 16em;
-    height: 25em;
+    height: 29em;
     transition: all 0.9s ease-in-out;
 }
 
@@ -1216,12 +1217,13 @@ body::-webkit-scrollbar {
     font-weight: bolder;
 }
 
-.flip-card2-back{
+.flip-card2-back {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
 }
-.flip-card-ulist{
+
+.flip-card-ulist {
     list-style: none;
     padding: 50px 20px;
     color: #fff;
@@ -1230,27 +1232,151 @@ body::-webkit-scrollbar {
     flex-flow: column wrap;
     gap: 10px;
 }
-.flip-items{
+
+.flip-items {
     display: flex;
     flex-flow: row wrap;
     gap: 10px;
 }
 
-.flip-front2{
+.flip-front2 {
     background-color: #ffe8eb;
 }
 
-.flip-front3{
+.flip-front3 {
     background-color: #f2c6fc;
 }
-.flip-front4{
+
+.flip-front4 {
     background-color: #dde7ee;
 }
 
+.dts-community-banner {
+    padding: 140px 30px 40px 30px;
+    background-color: #F9F9FF;
+}
+
+.com-banner-head {
+    text-align: center;
+    font-size: 3.1em;
+    font-weight: bolder;
+    color: #192335;
+}
+
+.dts-com-cards-banner {
+    position: relative;
+    padding: 90px 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.dts-com-cards-banner::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(79, 190, 218, 0.16) 0%, #4FBEDA 49%, rgba(79, 190, 218, 0.09) 99%);
+}
+
+.com-card {
+    padding: 20px 0px;
+    position: relative;
+}
+
+.com-card-before::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 4px solid #0d6efd;
+    border-radius: 100%;
+    left: 50%;
+    bottom: calc(100% + 17px);
+    transform: translateX(-50%);
+    background: #f9f9ff;
+}
+
+#com-card-down1,
+#com-card-down2 {
+    position: relative;
+    top: 35px;
+}
+
+.com-card-before::before {
+    position: absolute;
+    content: "";
+    height: 130px;
+    width: 4px;
+    background: linear-gradient(180deg, #0d6efd 0%, rgba(23, 221, 221, 0.11) 99%);
+    left: 50%;
+    bottom: 70%;
+    transform: translateX(-50%);
+}
 
 
+.com-card-content-part::before {
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: 0px;
+    background: linear-gradient(90deg, #CCA1E8 2%, #6881EA 99%);
+}
 
+.com-card-content-part {
+    width: 16em;
+    height: 18em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    overflow-y: hidden;
+    transition: all 0.3s;
+}
 
+.com-card-content-part:hover {
+    transition: all 0.3s;
+    transform: translateY(-3px);
+}
+
+.com-img {
+    position: absolute;
+    top: 15%;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: rgba(140, 142, 145, 0.2) 0px 6px 64px;
+}
+
+.com-card-back-circle {
+    border: 25px solid #F2F4FD;
+    width: 100%;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: -65%;
+}
+
+.com-text-count {
+    font-size: 2em;
+    font-weight: bolder;
+    position: absolute;
+    top: 55%;
+}
+
+.com-text {
+    position: absolute;
+    top: 80%;
+    font-size: 1.2em;
+    color: #676d7a;
+}
 
 
 
@@ -1363,6 +1489,23 @@ body::-webkit-scrollbar {
         padding: 50px 0px;
     }
 
+    #com-card-down1,
+    #com-card-down2 {
+        position: relative;
+        top: 0px;
+    }
+
+    .com-card-before::before {
+        position: absolute;
+        content: "";
+        height: 90px;
+        width: 4px;
+        background: linear-gradient(180deg, #0d6efd 0%, rgba(23, 221, 221, 0.11) 99%);
+        left: 50%;
+        bottom: 80%;
+        transform: translateX(-50%);
+    }
+
 }
 
 @media (max-width:770px) {
@@ -1371,6 +1514,7 @@ body::-webkit-scrollbar {
         height: max-content;
     }
 }
+
 
 @media (max-width:425px) {
     .sec-slider-content {
