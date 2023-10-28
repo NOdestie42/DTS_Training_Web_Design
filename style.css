@@ -1378,35 +1378,120 @@ body::-webkit-scrollbar {
     color: #676d7a;
 }
 
+.dts-cdownload-banner {
+    padding: 50px 40px;
+}
 
+.cd-banner-content {
+    padding: 80px 20px;
+    margin: auto;
+    background-color: #ffffff;
+}
 
+.dts-cdbanner {
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
 
+.dts-cd-content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
 
+.cd-heading {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 10px;
+}
 
+.cd-head {
+    font-size: 32px;
+    font-weight: bolder;
+}
 
+.cd-text {
+    font-size: larger;
+    font-weight: 500;
+}
 
+.cd-btn-spans {
+    display: flex;
+    flex-flow: column wrap;
+}
 
+.cd-btn {
+    text-decoration: none;
+    text-align: center;
+}
 
+.btn-aft {
+    transform: translateY(90px);
+    opacity: 0;
+}
 
+.cd-btn-spans {
+    text-align: center;
+    padding: 20px 10px 0px 10px;
+    border-radius: 10px;
+    width: max-content;
+    color: #fff;
+    font-size: larger;
+    font-weight: bold;
+    background: linear-gradient(90deg, #1e9ace 55%, #ac6be5 88%);
+    transition: all 0.5s;
+}
 
+.btn-bef,
+.btn-aft {
+    transition: all 0.5s ease-out;
+}
 
+.cd-btn-spans:hover {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    background: linear-gradient(90deg, #ac6be5 55%, #1e9ace 88%);
+}
 
+.cd-btn-spans:hover .btn-bef {
+    transition: all 0.5s;
+    transform: translateY(-90px);
+    opacity: 0;
+}
 
+.cd-btn-spans:hover .btn-aft {
+    transition: all 0.5s;
+    transform: translateY(-20px);
+    opacity: 1;
+}
 
+.cd-btn-content {
+    position: relative;
+}
 
+.cd-img {
+    width: 100%;
+    position: absolute;
+    top: -150%;
+    right: -70%;
+    animation: rotate 40s linear infinite;
+}
 
+@keyframes rotate {
+    0% {
+        transform: rotate(360deg);
+    }
 
+    100% {
+        transform: rotate(0deg);
 
-
-
-
-
-
-
-
-
-
-
+    }
+}
 
 
 
@@ -1513,6 +1598,15 @@ body::-webkit-scrollbar {
         width: 70%;
         height: max-content;
     }
+
+    .dts-cdbanner {
+        width: 100%;
+    }
+
+    .dts-cdownload-banner {
+        padding: 50px 0px;
+    }
+
 }
 
 
@@ -1520,4 +1614,12 @@ body::-webkit-scrollbar {
     .sec-slider-content {
         width: 19em;
     }
+
+    .cd-img {
+        width: 100%;
+        position: absolute;
+        top: 80%;
+        right: -88%;
+    }
+
 }
