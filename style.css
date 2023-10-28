@@ -1494,18 +1494,178 @@ body::-webkit-scrollbar {
 }
 
 
+.dts-public-cards {
+    overflow: hidden;
+    padding: 90px 0px 20px 0px;
+}
+
+.pb-card-head {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.public-card-banner {
+    position: relative;
+}
+
+.pb-cards {
+    margin-top: 50px;
+}
+
+.pb-cards::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    height: 100%;
+    width: 100px;
+    background: linear-gradient(90deg, #fff 0, rgba(255, 255, 255, 0));
+    z-index: 2;
+}
+
+.pb-cards::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    height: 100%;
+    width: 100px;
+    z-index: 2;
+    background: linear-gradient(90deg, rgba(215, 215, 215, 0) 6%, #ffffff 99%);
+}
+
+.pb-cards-content {
+    padding: 40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 500%;
+    gap: 20px;
+}
 
 
 
+.pb-card-body::before {
+    position: absolute;
+    content: "";
+    right: 40px;
+    top: 40px;
+    background-image: url(content/quote.svg);
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 44px;
+}
 
+.pb-card-info {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 20px;
+}
 
+.pb-card-img {
+    background-image: url(content/assad-tanoli-9rOvhLyqbVw-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
 
+.pb-card-img2 {
+    background-image: url(content/assad-tanoli-I6Kz__TPmbU-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
 
+.pb-card-img3 {
+    background-image: url(content/pb-card1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
 
+.pb-card-img4 {
+    background-image: url(content/pb-card.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
 
+.pb-card-img5 {
+    background-image: url(content/pb-card-3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.pb-card-img6{
+    background-image: url(content/pb-card-6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.pb-card-img7{
+    background-image: url(content/pb-card7.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.pb-card-img8{
+    background-image: url(content/pb-card-8.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
 
+.pb-card-body {
+    background-color: #fff;
+    padding: 50px 40px;
+    width: 35em;
+    height: max-content;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
 
+.pb-head {
+    color: #192335;
+}
 
+.pb-head-text {
+    color: #676d7a;
+    font-weight: 600;
+}
+
+.pb-card-info-detail {
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #676d7a;
+}
 
 
 
