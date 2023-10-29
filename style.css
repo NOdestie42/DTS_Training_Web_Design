@@ -1516,10 +1516,11 @@ body::-webkit-scrollbar {
 .pb-cards::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 0%;
     height: 100%;
     width: 100px;
+    /* background-color: #0d6efd; */
     background: linear-gradient(90deg, #fff 0, rgba(255, 255, 255, 0));
     z-index: 2;
 }
@@ -1527,24 +1528,53 @@ body::-webkit-scrollbar {
 .pb-cards::after {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 30%;
     right: 0%;
     height: 100%;
     width: 100px;
     z-index: 2;
+    /* background-color: red; */
     background: linear-gradient(90deg, rgba(215, 215, 215, 0) 6%, #ffffff 99%);
 }
 
-.pb-cards-content {
+.pb-cards-content1,
+.pb-cards-content2 {
     padding: 40px 0px;
     display: flex;
     align-items: center;
     justify-content: left;
-    width: 500%;
+    width: max-content;
     gap: 20px;
 }
 
+.pb-cards-content1 {
+    animation: forward 80s linear infinite;
 
+}
+
+.pb-cards-content2 {
+    animation: forward-reverse 80s linear infinite;
+}
+
+@keyframes forward {
+    from {
+        transform: translateX(calc(-35em * 3));
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes forward-reverse {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(calc(-35em * 3));
+    }
+}
 
 .pb-card-body::before {
     position: absolute;
@@ -1613,7 +1643,8 @@ body::-webkit-scrollbar {
     width: 80px;
     border-radius: 50%;
 }
-.pb-card-img6{
+
+.pb-card-img6 {
     background-image: url(content/pb-card-6.jpg);
     background-position: center;
     background-size: cover;
@@ -1622,7 +1653,8 @@ body::-webkit-scrollbar {
     width: 80px;
     border-radius: 50%;
 }
-.pb-card-img7{
+
+.pb-card-img7 {
     background-image: url(content/pb-card7.jpg);
     background-position: center;
     background-size: cover;
@@ -1631,7 +1663,8 @@ body::-webkit-scrollbar {
     width: 80px;
     border-radius: 50%;
 }
-.pb-card-img8{
+
+.pb-card-img8 {
     background-image: url(content/pb-card-8.jpg);
     background-position: center;
     background-size: cover;
@@ -1765,6 +1798,11 @@ body::-webkit-scrollbar {
 
     .dts-cdownload-banner {
         padding: 50px 0px;
+    }
+
+    .pb-cards-content1,
+    .pb-cards-content2 {
+        width: 900%;
     }
 
 }
