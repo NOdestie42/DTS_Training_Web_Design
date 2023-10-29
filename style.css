@@ -1863,7 +1863,7 @@ body::-webkit-scrollbar {
 }
 
 .blog-content {
-    margin: 0px 50px;
+    margin: 0px 10px;
     padding: 80px 0px;
 }
 
@@ -1872,7 +1872,7 @@ body::-webkit-scrollbar {
     align-items: center;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin: 30px 40px 40px 40px;    
     gap: 20px;
 }
 
@@ -1910,11 +1910,14 @@ body::-webkit-scrollbar {
     border-radius: 10px;
     padding-bottom: 80px;
     width: 500px;
+    transition: all 0.5s;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-
+.blg-card-left:hover{
+    transition: all 0.5s;
+    transform: scale(1.02);
+}
 .blg-card-right {
-    background-color: red;
-    height: 300px;
     width: 600px;
     border-radius: 10px;
 }
@@ -1952,6 +1955,93 @@ body::-webkit-scrollbar {
 .blg-btn-text {
     padding: 0px 5px;
 }
+
+.sub-img {
+    width: 300px;
+}
+
+.blg-sub-card {
+    display: flex;
+    flex-flow: row wrap;
+    transition: all 0.5s;
+    margin-bottom: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.blg-sub-card:hover{
+    transition: all 0.5s;
+    transform: scale(1.02);
+}
+.blg-sub-text {
+    width: 300px;
+    background-color: #ffffff;
+    padding-bottom: 4px;
+}
+
+.blg-right-card-ancor {
+    text-decoration: none;
+}
+
+.blg-card-head {
+    color: #192335;
+    transition: all 0.4s;
+}
+
+.blg-card-head:hover {
+    color: #00A3C9;
+    transition: all 0.4s;
+}
+
+.blg-btn {
+    color: #192335;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2051,6 +2141,15 @@ body::-webkit-scrollbar {
     .pb-cards-content2 {
         width: 900%;
     }
+
+    .blg-image {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .blg-sub-text {
+        border-radius: 0px 0px 10px 10px;
+    }
+
 
 }
 
