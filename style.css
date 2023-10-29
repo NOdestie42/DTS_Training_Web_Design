@@ -1700,6 +1700,180 @@ body::-webkit-scrollbar {
     color: #676d7a;
 }
 
+.up-coming-content {
+    margin: 0px 40px;
+    padding: 120px 0px;
+}
+.upc-first {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.upc-head {
+    color: #192335;
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+#upc-btn {
+    margin: 0%;
+}
+
+#upc-btn-contents {
+    background: linear-gradient(90deg, #1e9ace 55%, #ac6be5 88%);
+    padding: 15px 24px;
+    display: flex;
+    gap: 15px;
+    border-radius: 30px;
+    color: #ffffff;
+    transition: all 0.3s;
+}
+
+#upc-btn-text {
+    font-weight: lighter;
+    font-size: medium;
+}
+
+.upc-cards {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.upc-card-content {
+    width: max-content;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.upc-card-content:hover{
+    transform: scale(1.03);
+    transition: all 0.4s ease;
+
+}
+.upc-card-img{
+    width: 250px;
+    height: 100%;
+}
+.upc-course-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.upc-card-text-part {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: first baseline;
+    padding-left: 20px;
+}
+
+.upc-date-locat,
+.upc-date,
+.upc-locat,
+.upc-time {
+    color: #6B7385;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 8px;
+}
+
+.upc-card-head {
+    color: #192335;
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding-bottom: 20px;
+    transition: all 0.4s;
+
+}
+.upc-head-ancor{
+    text-decoration: none;
+    padding: 20px 0px;
+}
+.upc-card-head:hover{
+    color: #00A3C9;
+    transition: all 0.4s;
+}
+
+.upc-btn-content {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+    border-radius: 30px;
+    color: black;
+    transition: all 0.3s;
+    border: 2px solid #676d7a;
+}
+
+.upc-right-arrow-btn {
+    opacity: 1;
+    transition: all 0.6s;
+}
+
+.upc-left-arrow-btn {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: all 0.6s;
+}
+
+.upc-btn-content:hover {
+    background-color:#00A3C9;
+    color: #fff;
+    border: 2px solid #fff;
+    transform: translateY(-4px);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+}
+
+
+.upc-btn-content:hover .upc-right-arrow-btn {
+    opacity: 0;
+    transform: translateX(40px);
+}
+
+.upc-btn-content:hover .upc-left-arrow-btn {
+    opacity: 1;
+    transform: translateX(10px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
