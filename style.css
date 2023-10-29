@@ -1872,7 +1872,7 @@ body::-webkit-scrollbar {
     align-items: center;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin: 30px 40px 40px 40px;    
+    margin: 30px 40px 40px 40px;
     gap: 20px;
 }
 
@@ -1913,10 +1913,12 @@ body::-webkit-scrollbar {
     transition: all 0.5s;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.blg-card-left:hover{
+
+.blg-card-left:hover {
     transition: all 0.5s;
     transform: scale(1.02);
 }
+
 .blg-card-right {
     width: 600px;
     border-radius: 10px;
@@ -1967,10 +1969,12 @@ body::-webkit-scrollbar {
     margin-bottom: 30px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.blg-sub-card:hover{
+
+.blg-sub-card:hover {
     transition: all 0.5s;
     transform: scale(1.02);
 }
+
 .blg-sub-text {
     width: 300px;
     background-color: #ffffff;
@@ -1995,32 +1999,142 @@ body::-webkit-scrollbar {
     color: #192335;
 }
 
+.subscription-part {
+    padding: 90px 0px;
+    background-color: #00A3C9;
+}
+
+.sub-part-head-intro {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+#sec-last-banner-btn {
+    margin: auto;
+    background-color: #21AFD0;
+    color: #fff;
+}
+
+.sec-last-banner-head {
+    color: #fff;
+    font-size: 2.9em;
+}
+
+.sub-para {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: large;
+    padding: 20px 0px;
+}
+
+.sec-last-banner-input-part {
+    position: relative;
+    padding: 30px 0px;
+    width: 50%;
+    margin: auto;
+}
+
+#sub-banner-input {
+    caret-color: #676d7a;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    font-size: large;
+    padding: 25px 20px;
+    outline: none;
+}
+
+.sub-btn-content {
+    background: linear-gradient(90deg, #1e9ace 55%, #ac6be5 88%);
+    padding: 15px 50px;
+    display: flex;
+    gap: 15px;
+    border-radius: 8px;
+    color: #ffffff;
+    transition: all 0.3s;
+}
+
+#sub-btn-content {
+    position: absolute;
+    top: 30%;
+    right: 2%;
+    width: 40%;
+}
+
+.sub-right-arrow-btn {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.sub-left-arrow-btn {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: all 0.5s;
+}
+
+.sub-btn-content:hover {
+    background: linear-gradient(90deg, #ac6be5 55%, #1e9ace 88%);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+}
+
+.sub-btn-content:hover .sub-right-arrow-btn {
+    opacity: 0;
+    transform: translateX(40px);
+}
+
+.sub-btn-content:hover .sub-left-arrow-btn {
+    opacity: 1;
+    transform: translateX(10px);
+}
 
 
+.input-subline {
+    text-align: center;
+    color: #fff;
+    padding-bottom: 20px;
+    font-size: medium;
+}
+
+.sub-banner-popularity-part {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.left-popula-part {
+    border-right: 1px solid #33B5D4;
+    border-bottom: none;
+    padding-right: 15px;
+}
+
+.popularity-head {
+    font-size: 3.4em;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.popu-para {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+
+}
+
+.popu-para-subtil {
+    color: #fff;
+    padding: 10px 0px;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.right-popula-part {
+    padding-left: 15px;
+}
 
 
 
@@ -2150,7 +2264,22 @@ body::-webkit-scrollbar {
         border-radius: 0px 0px 10px 10px;
     }
 
+    .sec-last-banner-input-part {
+        position: relative;
+        width: 80%;
+        margin: auto;
+        padding: 30px 0px;
+    }
 
+    #sub-btn-content {
+        position: relative;
+        margin-top: 20px;
+        width: max-content;
+    }
+
+    .blg-sub-card {
+        box-shadow: none;
+    }
 }
 
 
@@ -2164,6 +2293,16 @@ body::-webkit-scrollbar {
         position: absolute;
         top: 80%;
         right: -88%;
+    }
+
+    .left-popula-part {
+        border-right: none;
+        border-bottom: 1px solid #33B5D4;
+        padding-right: 0%;
+    }
+
+    .right-popula-part {
+        padding-left: 0%;
     }
 
 }
