@@ -1084,7 +1084,7 @@ body::-webkit-scrollbar {
     align-items: center;
     justify-content: space-around;
     gap: 20px;
-    padding: 50px 30px;
+    padding: 20px;
 }
 
 .dts-second-cards-banner {
@@ -2487,7 +2487,7 @@ body::-webkit-scrollbar {
 
 @media (max-width:425px) {
     .sec-slider-content {
-        width: 19em;
+        width: 14em;
     }
 
     .cd-img {
